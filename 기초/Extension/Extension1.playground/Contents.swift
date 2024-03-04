@@ -1,8 +1,8 @@
 import UIKit
 
 struct Size {
-    var width = 0.0
-    var height = 0.0
+    var width = 2.0
+    var height = 3.1
 }
 
 extension Size {
@@ -20,5 +20,4 @@ let s = Size()
 s.width
 s.height
 s.area
-
     

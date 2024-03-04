@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "settingIconSelected.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
