@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="KTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-al-FHa">
+                                <rect key="frame" x="126.66666666666669" y="368" width="140" height="141"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcL-Vx-jgv">
+                                <rect key="frame" x="96.666666666666686" y="561" width="200" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="i7P-J8-mRq"/>
+                                    <constraint firstAttribute="height" constant="38" id="tFj-LX-lrG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" name="main-brown"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gi9-Nl-Ixb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="main-yellow"/>
+                        <constraints>
+                            <constraint firstItem="KcL-Vx-jgv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1ZF-ys-CTw"/>
+                            <constraint firstItem="dNw-al-FHa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JWy-cR-ypy"/>
+                            <constraint firstItem="dNw-al-FHa" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gjJ-Of-5IH"/>
+                            <constraint firstItem="KcL-Vx-jgv" firstAttribute="top" secondItem="dNw-al-FHa" secondAttribute="bottom" constant="52" id="yR9-6z-QLu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dNw-al-FHa" id="LOm-SF-LKh"/>
+                        <outlet property="loginButton" destination="KcL-Vx-jgv" id="7Zd-Bf-cKf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jat-Z9-5UG">
+            <objects>
+                <viewController id="HLR-qd-nfp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FNZ-0I-mKt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nmO-HK-Ld5"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <color key="tintColor" name="main-wh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tabIcon_live" selectedImage="tabIcon_live_selected" id="GV2-YF-Bds"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BgK-0j-7LE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="-35"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SbX-by-rCG">
+            <objects>
+                <viewController id="Tzf-so-MP1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jee-ec-bTM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7qO-I7-3er"/>
+                        <color key="backgroundColor" name="bg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tabIcon_my" selectedImage="tabIcon_my_selected" id="sc5-Th-8H1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ewi-3A-dR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="691"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="cQy-IS-GfY">
+            <objects>
+                <viewController id="IIl-3v-cer" customClass="HomeViewController" customModule="KTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YNO-JG-j2c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-xr-dNx">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" name="bg"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="taG-AE-yG5"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="4E1-xr-dNx" firstAttribute="trailing" secondItem="taG-AE-yG5" secondAttribute="trailing" id="3Rk-Tb-6D2"/>
+                            <constraint firstItem="taG-AE-yG5" firstAttribute="bottom" secondItem="4E1-xr-dNx" secondAttribute="bottom" id="8i4-SX-UVq"/>
+                            <constraint firstItem="4E1-xr-dNx" firstAttribute="top" secondItem="taG-AE-yG5" secondAttribute="top" id="kUh-vf-py0"/>
+                            <constraint firstItem="4E1-xr-dNx" firstAttribute="leading" secondItem="taG-AE-yG5" secondAttribute="leading" id="pGV-2p-qp8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tabIcon_home" selectedImage="tabIcon_home_selected" id="S3Y-YK-diW"/>
+                    <connections>
+                        <outlet property="tableView" destination="4E1-xr-dNx" id="ZGU-Ip-slr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muO-w7-Fuv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="-763"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MfB-Ml-YF1">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbar" id="Jad-uX-FWv" customClass="TabBarController" customModule="KTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qz4-0w-kLd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="bg"/>
+                            <color key="shadowColor" name="stroke-light"/>
+                        </tabBarAppearance>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="bg"/>
+                            <color key="shadowColor" name="stroke-light"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IIl-3v-cer" kind="relationship" relationship="viewControllers" id="nfq-Bt-Smm"/>
+                        <segue destination="HLR-qd-nfp" kind="relationship" relationship="viewControllers" id="AEa-Bx-UAF"/>
+                        <segue destination="Tzf-so-MP1" kind="relationship" relationship="viewControllers" id="JJq-bs-vSa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6H-Ea-yOt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869" y="-35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchImage" width="140" height="141"/>
+        <image name="tabIcon_home" width="28" height="28"/>
+        <image name="tabIcon_home_selected" width="28" height="28"/>
+        <image name="tabIcon_live" width="80" height="28"/>
+        <image name="tabIcon_live_selected" width="80" height="28"/>
+        <image name="tabIcon_my" width="28" height="28"/>
+        <image name="tabIcon_my_selected" width="29" height="28"/>
+        <namedColor name="bg">
+            <color red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main-brown">
+            <color red="0.27843137254901962" green="0.12941176470588237" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main-wh">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main-yellow">
+            <color red="0.99215686274509807" green="0.89411764705882357" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="stroke-light">
+            <color red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
