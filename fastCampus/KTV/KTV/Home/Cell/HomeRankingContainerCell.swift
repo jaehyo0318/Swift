@@ -11,11 +11,11 @@ protocol HomeRankingContainerCellDelegate: AnyObject {
     func homeRankingContainerCell(_ cell: HomeRankingContainerCell, didSelectItemAt index: Int)
 }
 
-class HomeRankingContainerCell: UITableViewCell {
+class HomeRankingContainerCell: UICollectionViewCell {
     
     
     static let identifier: String = "HomeRankingContainerCell"
-    static let height: CGFloat = 349
+    static let height: CGFloat = 265
     @IBOutlet weak var collectionView: UICollectionView!
     weak var delegate: HomeRankingContainerCellDelegate?
     private var rankings: [Home.Ranking]?
@@ -29,10 +29,6 @@ class HomeRankingContainerCell: UITableViewCell {
         )
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
     
     func setData(_ data: [Home.Ranking]) {
@@ -56,6 +52,7 @@ extension HomeRankingContainerCell: UICollectionViewDelegate, UICollectionViewDa
            let data = self.rankings?[indexPath.item] {
             cell.setRank(data, rank: indexPath.item + 1)
         }
+        
         
         return cell
     }

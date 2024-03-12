@@ -19,6 +19,8 @@ class HomeRankingItemCell: UICollectionViewCell {
         super.awakeFromNib()
         
         self.layer.cornerRadius = 10
+        
+        self.numberLabel.layer.cornerRadius = 10
     }
 
     override func prepareForReuse() {
@@ -32,16 +34,6 @@ class HomeRankingItemCell: UICollectionViewCell {
     
     func setRank(_ data: Home.Ranking, rank: Int) {
         self.numberLabel.text = "\(rank)"
-        self.imageTask = .init(
-            operation: {
-                guard
-                    let responseData = try? await URLSession.shared.data(for: .init(url: data.imageUrl)).0
-                else {
-                    return
-                }
-                
-                self.thumbnailImageView.image = UIImage(data: responseData)
-            }
-        )
+        self.imageTask = self.thumbnailImageView.loadImage(url: data.imageUrl)
     }
 }

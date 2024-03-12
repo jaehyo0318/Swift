@@ -17,6 +17,7 @@ class HomeRecentWatchItemCell: UICollectionViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
+    
     private var imageTask: Task<Void, Never>?
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -32,6 +33,8 @@ class HomeRecentWatchItemCell: UICollectionViewCell {
         self.thumbnailImageView.layer.cornerRadius = 42
         self.thumbnailImageView.layer.borderWidth = 2
         self.thumbnailImageView.layer.borderColor = UIColor(named: "stroke-light")?.cgColor
+        
+        
     }
     
     override func prepareForReuse() {
@@ -46,20 +49,12 @@ class HomeRecentWatchItemCell: UICollectionViewCell {
     }
     
     func setData(_ data: Home.Recent) {
-        self.imageTask = Task {
-            guard
-                let responseData = try? await URLSession.shared.data(for: .init(url: data.ImageUrl)).0
-            else {
-                return
-            }
-            
-            self.thumbnailImageView.image = UIImage(data: responseData)
-        }
         self.titleLabel.text = data.title
         self.subtitleLabel.text = data.channel
         self.dateLabel.text = Self.dateFormatter.string(
             from: .init(timeIntervalSince1970: data.timeStamp)
         )
+        self.imageTask = self.thumbnailImageView.loadImage(url: data.imageUrl)
     }
 
 }

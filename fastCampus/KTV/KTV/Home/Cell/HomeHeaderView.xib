@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0Mq-nt-V6G" customClass="HomeHeaderView" customModule="KTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNm-y1-Qes">
+                    <rect key="frame" x="16" y="0.0" width="361" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7aQ-gt-3x5">
+                            <rect key="frame" x="0.0" y="10.666666666666664" width="24" height="29"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K사 영상/스트리밍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf7-F7-Wxf">
+                            <rect key="frame" x="34" y="15.333333333333334" width="117" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" name="main-wh"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="7Mr-3C-SMe"/>
+                    <constraints>
+                        <constraint firstItem="kf7-F7-Wxf" firstAttribute="leading" secondItem="7aQ-gt-3x5" secondAttribute="trailing" constant="10" id="0Lt-gZ-fAg"/>
+                        <constraint firstItem="7aQ-gt-3x5" firstAttribute="leading" secondItem="bNm-y1-Qes" secondAttribute="leading" id="AmV-XB-jJ6"/>
+                        <constraint firstItem="7aQ-gt-3x5" firstAttribute="leading" secondItem="bNm-y1-Qes" secondAttribute="leading" id="Bbs-12-zmi"/>
+                        <constraint firstItem="7aQ-gt-3x5" firstAttribute="centerY" secondItem="bNm-y1-Qes" secondAttribute="centerY" id="qIS-72-Olv"/>
+                        <constraint firstItem="kf7-F7-Wxf" firstAttribute="centerY" secondItem="bNm-y1-Qes" secondAttribute="centerY" id="vzx-LY-ZOd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="RNE-bT-UO5"/>
+            <color key="backgroundColor" name="bg"/>
+            <constraints>
+                <constraint firstItem="bNm-y1-Qes" firstAttribute="top" secondItem="0Mq-nt-V6G" secondAttribute="top" id="RJ1-yt-QAJ"/>
+                <constraint firstAttribute="bottom" secondItem="bNm-y1-Qes" secondAttribute="bottom" constant="16" id="e6o-q7-OOT"/>
+                <constraint firstAttribute="trailing" secondItem="bNm-y1-Qes" secondAttribute="trailing" constant="16" id="kuF-hv-eRf"/>
+                <constraint firstItem="bNm-y1-Qes" firstAttribute="leading" secondItem="0Mq-nt-V6G" secondAttribute="leading" constant="16" id="zT2-mB-t1W"/>
+            </constraints>
+            <point key="canvasLocation" x="161" y="-51"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="logo" width="24" height="29"/>
+        <namedColor name="bg">
+            <color red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main-wh">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

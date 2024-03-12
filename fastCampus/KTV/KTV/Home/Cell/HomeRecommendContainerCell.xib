@@ -1,89 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="443" id="KGk-i7-Jjw" customClass="HomeRecommendContainerCell" customModule="KTV" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Hd-cz-rZP" customClass="HomeRecommendContainerCell" customModule="KTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="495"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
-                <autoresizingMask key="autoresizingMask"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZsR-fH-X5K">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="495"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-ep-XuA">
-                        <rect key="frame" x="30" y="21" width="333" height="358"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xzf-06-hvT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="495"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vD7-na-qhh">
-                                <rect key="frame" x="14.999999999999996" y="25" width="34.666666666666657" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgl-0L-QHP">
+                                <rect key="frame" x="14" y="24" width="292" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" name="main-wh"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eFN-vr-9ga">
-                                <rect key="frame" x="15" y="79" width="303" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hry-3k-uvO">
+                                <rect key="frame" x="26" y="78" width="268" height="372"/>
+                                <color key="backgroundColor" name="bk-origin"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc4-Pw-jI3">
-                                <rect key="frame" x="142.66666666666666" y="294" width="48" height="28"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="unfold"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFR-Ep-oHP">
+                                <rect key="frame" x="0.0" y="450" width="320" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="tu5-z1-G0K"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="unfold"/>
                                 <connections>
-                                    <action selector="foldButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nzx-On-28A"/>
+                                    <action selector="foldButtonDidTap:" destination="3Hd-cz-rZP" eventType="touchUpInside" id="7o1-Fd-JuY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="bk-origin"/>
                         <constraints>
-                            <constraint firstItem="eFN-vr-9ga" firstAttribute="leading" secondItem="9NN-ep-XuA" secondAttribute="leading" constant="15" id="09X-vo-8nr"/>
-                            <constraint firstItem="eFN-vr-9ga" firstAttribute="centerY" secondItem="9NN-ep-XuA" secondAttribute="centerY" id="1O0-JI-Itg"/>
-                            <constraint firstItem="vD7-na-qhh" firstAttribute="leading" secondItem="9NN-ep-XuA" secondAttribute="leading" constant="15" id="VBJ-Ad-m1m"/>
-                            <constraint firstItem="vD7-na-qhh" firstAttribute="top" secondItem="9NN-ep-XuA" secondAttribute="top" constant="25" id="l55-dc-ai1"/>
-                            <constraint firstItem="eFN-vr-9ga" firstAttribute="top" secondItem="vD7-na-qhh" secondAttribute="bottom" constant="30" id="pUd-Eb-DVW"/>
-                            <constraint firstAttribute="trailing" secondItem="eFN-vr-9ga" secondAttribute="trailing" constant="15" id="qXl-43-9W0"/>
-                            <constraint firstItem="Oc4-Pw-jI3" firstAttribute="centerX" secondItem="eFN-vr-9ga" secondAttribute="centerX" id="vWc-vw-eCu"/>
-                            <constraint firstItem="Oc4-Pw-jI3" firstAttribute="top" secondItem="eFN-vr-9ga" secondAttribute="bottom" constant="15" id="y0t-kC-wNk"/>
+                            <constraint firstAttribute="trailing" secondItem="vgl-0L-QHP" secondAttribute="trailing" constant="14" id="2r8-bb-xN7"/>
+                            <constraint firstItem="vgl-0L-QHP" firstAttribute="top" secondItem="Xzf-06-hvT" secondAttribute="top" constant="24" id="5lZ-sl-XJp"/>
+                            <constraint firstItem="dFR-Ep-oHP" firstAttribute="top" secondItem="hry-3k-uvO" secondAttribute="bottom" id="7bc-LI-QNG"/>
+                            <constraint firstItem="hry-3k-uvO" firstAttribute="leading" secondItem="Xzf-06-hvT" secondAttribute="leading" constant="26" id="EEw-hm-tqj"/>
+                            <constraint firstAttribute="bottom" secondItem="dFR-Ep-oHP" secondAttribute="bottom" constant="17" id="Gcx-Rd-The"/>
+                            <constraint firstItem="vgl-0L-QHP" firstAttribute="leading" secondItem="Xzf-06-hvT" secondAttribute="leading" constant="14" id="KQH-SE-np8"/>
+                            <constraint firstAttribute="trailing" secondItem="hry-3k-uvO" secondAttribute="trailing" constant="26" id="MTg-Zw-nFM"/>
+                            <constraint firstItem="dFR-Ep-oHP" firstAttribute="leading" secondItem="Xzf-06-hvT" secondAttribute="leading" id="Qsd-r2-4JB"/>
+                            <constraint firstAttribute="trailing" secondItem="dFR-Ep-oHP" secondAttribute="trailing" id="eck-jw-kib"/>
+                            <constraint firstItem="hry-3k-uvO" firstAttribute="top" secondItem="vgl-0L-QHP" secondAttribute="bottom" constant="33" id="moa-l4-w7P"/>
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" name="bg"/>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="9NN-ep-XuA" secondAttribute="bottom" constant="10" id="HAX-5M-Dqx"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="9NN-ep-XuA" secondAttribute="trailing" constant="10" id="Tht-Jx-5V7"/>
-                    <constraint firstItem="9NN-ep-XuA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="dmd-o2-Czd"/>
-                    <constraint firstItem="9NN-ep-XuA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="u93-Gk-q2m"/>
+                    <constraint firstAttribute="trailing" secondItem="Xzf-06-hvT" secondAttribute="trailing" id="I86-vd-i7C"/>
+                    <constraint firstItem="Xzf-06-hvT" firstAttribute="top" secondItem="ZsR-fH-X5K" secondAttribute="top" id="O8E-FE-hBT"/>
+                    <constraint firstAttribute="bottom" secondItem="Xzf-06-hvT" secondAttribute="bottom" id="lCE-MX-ble"/>
+                    <constraint firstItem="Xzf-06-hvT" firstAttribute="leading" secondItem="ZsR-fH-X5K" secondAttribute="leading" id="zfC-yq-juX"/>
                 </constraints>
-            </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            </collectionViewCellContentView>
             <connections>
-                <outlet property="containerView" destination="9NN-ep-XuA" id="0wi-aP-MG7"/>
-                <outlet property="foldButton" destination="Oc4-Pw-jI3" id="XLl-OG-D2N"/>
-                <outlet property="tableView" destination="eFN-vr-9ga" id="pXd-wI-k2G"/>
+                <outlet property="containerView" destination="Xzf-06-hvT" id="Db2-mZ-uyd"/>
+                <outlet property="foldButton" destination="dFR-Ep-oHP" id="hNW-RV-XP4"/>
+                <outlet property="tableView" destination="hry-3k-uvO" id="H5r-ih-Y2c"/>
             </connections>
-            <point key="canvasLocation" x="249.61832061068702" y="9.1549295774647899"/>
-        </tableViewCell>
+            <point key="canvasLocation" x="-478" y="12"/>
+        </collectionViewCell>
     </objects>
     <resources>
         <image name="unfold" width="24" height="14"/>
-        <namedColor name="bg">
-            <color red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="bk-origin">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="main-wh">
             <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
