@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +18,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랭킹 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1T-Dz-8eY">
-                            <rect key="frame" x="15" y="15" width="83" height="22"/>
+                            <rect key="frame" x="0.0" y="15" width="83" height="22"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" name="main-wh"/>
                             <nil key="highlightedColor"/>
@@ -28,14 +27,13 @@
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="S1T-Dz-8eY" secondAttribute="bottom" constant="13" id="2VY-gB-n2U"/>
                         <constraint firstItem="S1T-Dz-8eY" firstAttribute="top" secondItem="l4K-UV-79S" secondAttribute="top" constant="15" id="DHI-AN-861"/>
-                        <constraint firstItem="S1T-Dz-8eY" firstAttribute="leading" secondItem="l4K-UV-79S" secondAttribute="leading" constant="15" id="z47-da-cAh"/>
+                        <constraint firstItem="S1T-Dz-8eY" firstAttribute="leading" secondItem="l4K-UV-79S" secondAttribute="leading" id="z47-da-cAh"/>
                     </constraints>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <constraints>
-                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="l4K-UV-79S" secondAttribute="trailing" id="ONY-1i-qwD"/>
-                <constraint firstItem="l4K-UV-79S" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="gIz-u5-f2x"/>
+                <constraint firstAttribute="trailing" secondItem="l4K-UV-79S" secondAttribute="trailing" id="ONY-1i-qwD"/>
+                <constraint firstItem="l4K-UV-79S" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="gIz-u5-f2x"/>
                 <constraint firstItem="l4K-UV-79S" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="iPx-eh-Ixf"/>
                 <constraint firstAttribute="bottom" secondItem="l4K-UV-79S" secondAttribute="bottom" id="j9H-9r-Kd9"/>
             </constraints>

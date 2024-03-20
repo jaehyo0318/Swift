@@ -44,8 +44,9 @@ extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = cell as? BookmarkCell,
            let data = self.viewModel.channels?[indexPath.row] {
             cell.setData(data)
+            
         }
-        print(cell)
+        
         return cell
     }
     
