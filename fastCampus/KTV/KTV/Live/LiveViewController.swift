@@ -59,7 +59,8 @@ class LiveViewController: UIViewController {
     private func setupCollectionView() {
         self.collectionView.register(
             UINib(nibName: LiveCell.identifier, bundle: nil),
-            forCellWithReuseIdentifier: LiveCell.identifier)
+            forCellWithReuseIdentifier: LiveCell.identifier
+        )
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         

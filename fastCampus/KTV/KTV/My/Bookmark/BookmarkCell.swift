@@ -39,5 +39,6 @@ class BookmarkCell: UITableViewCell {
     func setData(_ data: Bookmark.Item) {
         self.label.text = data.channel
         self.imageTask = self.thumbnailImageView.loadImage(url: data.thumbnail)
+        
     }
 }

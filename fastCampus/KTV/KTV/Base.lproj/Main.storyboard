@@ -311,6 +311,7 @@
         <!--찜한 영상-->
         <scene sceneID="dix-Ll-zuU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYn-8f-N4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="55f-yd-Bbg" customClass="BookmarkViewController" customModule="KTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0yg-6z-KGe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -335,7 +336,6 @@
                         <outlet property="tableView" destination="tUM-w6-6sT" id="0cZ-Nh-MNC"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sYn-8f-N4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3589" y="302"/>
         </scene>

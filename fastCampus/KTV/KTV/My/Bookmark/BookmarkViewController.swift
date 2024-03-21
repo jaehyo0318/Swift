@@ -17,7 +17,7 @@ class BookmarkViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.register(
-            UINib(nibName: BookmarkCell.identifier, bundle: nil),
+            UINib(nibName: "BookmarkCell", bundle: nil),
             forCellReuseIdentifier: BookmarkCell.identifier
         )
         self.tableView.delegate = self
@@ -50,4 +50,7 @@ extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        60
+    }
 }

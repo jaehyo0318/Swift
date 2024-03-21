@@ -96,7 +96,7 @@ class VideoViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.modalPresentationStyle = .fullScreen
+        self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
     }
     

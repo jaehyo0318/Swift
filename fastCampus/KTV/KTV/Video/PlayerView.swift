@@ -116,22 +116,22 @@ class PlayerView: UIView {
     }
     
     func forward(to seconds: Double = 10) {
-        guard let currentTime = self.player?.currentTime().seconds else {
+        guard let currentTime = self.player?.currentItem?.currentTime().seconds else {
             return
         }
         
         self.player?.seek(
-            to: CMTime(seconds: currentTime + 10, preferredTimescale: 1)
+            to: CMTime(seconds: currentTime + seconds, preferredTimescale: 1)
         )
     }
     
     func rewind(to seconds: Double = 10) {
-        guard let currentTime = self.player?.currentTime().seconds else {
+        guard let currentTime = self.player?.currentItem?.currentTime().seconds else {
             return
         }
         
         self.player?.seek(
-            to: CMTime(seconds: currentTime - 10, preferredTimescale: 1)
+            to: CMTime(seconds: currentTime - seconds, preferredTimescale: 1)
         )
     }
     
@@ -142,13 +142,13 @@ extension PlayerView {
         self.playObservation = player.addPeriodicTimeObserver(
             forInterval: CMTime(seconds: 0.5, preferredTimescale: 10),
             queue: .main
-        ) { [weak self] time in
+        ) { [weak self, weak player] time in
             guard let self else {
                 return
             }
             
             guard 
-                let currentItem = player.currentItem,
+                let currentItem = player?.currentItem,
                 currentItem.status == .readyToPlay,
                 let timeRange = (currentItem.loadedTimeRanges as? [CMTimeRange])?.first
             else {

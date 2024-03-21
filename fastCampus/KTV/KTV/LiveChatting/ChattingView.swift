@@ -99,6 +99,10 @@ class ChattingView: UIView {
 }
 
 extension ChattingView: UICollectionViewDelegateFlowLayout {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let item = self.viewModel.messages[indexPath.item]
         let width = collectionView.frame.width - 32
