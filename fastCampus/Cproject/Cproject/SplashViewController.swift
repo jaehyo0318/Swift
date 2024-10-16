@@ -10,14 +10,15 @@ import Lottie
 
 class SplashViewController: UIViewController {
     
+    @IBOutlet weak var lottieAnimationView: LottieAnimationView!
     
-    @IBOutlet weak var appIconCenterYConstaraint: NSLayoutConstraint!
-    @IBOutlet weak var appIconCenterXConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var appIcon: UIImageView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+//    @IBOutlet weak var appIconCenterYConstaraint: NSLayoutConstraint!
+//    @IBOutlet weak var appIconCenterXConstraint: NSLayoutConstraint!
+//    
+//    @IBOutlet weak var appIcon: UIImageView!
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -29,12 +30,13 @@ class SplashViewController: UIViewController {
         //            self?.view.layoutIfNeeded()
         //        } 천천히 날라가기
         
-        UIView.animate(withDuration: 3, animations: { [weak self] in
-            let rotationAngle: CGFloat = CGFloat.pi
-            self?.appIcon.transform = CGAffineTransform(rotationAngle: rotationAngle)
-        })
+//        UIView.animate(withDuration: 3, animations: { [weak self] in
+//            let rotationAngle: CGFloat = CGFloat.pi
+//            self?.appIcon.transform = CGAffineTransform(rotationAngle: rotationAngle)
+//        }) 회전
         
         
+        lottieAnimationView.play()
     }
     
     
