@@ -1,0 +1,15 @@
+{
+  "originHash" : "953af860a8ffd649e997c754d6e44986fb7c3d2813552b3f8ca4d200dd879a9f",
+  "pins" : [
+    {
+      "identity" : "package-boxoffices",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jaehyo0318/package-boxoffices",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b5cd3fcea93bc0b5a2fb66d8df88d47a5fb6f180"
+      }
+    }
+  ],
+  "version" : 3
+}
