@@ -16,6 +16,11 @@
 		290A336E2CBEA214008D0F3A /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290A336D2CBEA214008D0F3A /* Splash.storyboard */; };
 		290A33702CBEA24A008D0F3A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A336F2CBEA24A008D0F3A /* SplashViewController.swift */; };
 		29CDFCA82CBFF1580001BF33 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 29CDFCA72CBFF1580001BF33 /* Lottie */; };
+		29F760FF2CC12A4B00BF9DA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F760FE2CC12A4B00BF9DA6 /* Images.xcassets */; };
+		29F761012CC12C2700BF9DA6 /* CPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F761002CC12C2700BF9DA6 /* CPImage.swift */; };
+		29F761032CC1365F00BF9DA6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F761022CC1365F00BF9DA6 /* Colors.xcassets */; };
+		29F761052CC1396F00BF9DA6 /* CPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F761042CC1396F00BF9DA6 /* CPColor.swift */; };
+		29F761072CC13AE200BF9DA6 /* CPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F761062CC13AE200BF9DA6 /* CPFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		290A33672CBE9F3C008D0F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		290A336D2CBEA214008D0F3A /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		290A336F2CBEA24A008D0F3A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		29F760FE2CC12A4B00BF9DA6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		29F761002CC12C2700BF9DA6 /* CPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPImage.swift; sourceTree = "<group>"; };
+		29F761022CC1365F00BF9DA6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		29F761042CC1396F00BF9DA6 /* CPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPColor.swift; sourceTree = "<group>"; };
+		29F761062CC13AE200BF9DA6 /* CPFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		290A33582CBE9F3B008D0F3A /* Cproject */ = {
 			isa = PBXGroup;
 			children = (
+				29F760FD2CC12A2500BF9DA6 /* DesignSource */,
 				290A33592CBE9F3B008D0F3A /* AppDelegate.swift */,
 				290A335B2CBE9F3B008D0F3A /* SceneDelegate.swift */,
 				290A335D2CBE9F3B008D0F3A /* ViewController.swift */,
@@ -73,6 +84,18 @@
 				290A336F2CBEA24A008D0F3A /* SplashViewController.swift */,
 			);
 			path = Cproject;
+			sourceTree = "<group>";
+		};
+		29F760FD2CC12A2500BF9DA6 /* DesignSource */ = {
+			isa = PBXGroup;
+			children = (
+				29F760FE2CC12A4B00BF9DA6 /* Images.xcassets */,
+				29F761002CC12C2700BF9DA6 /* CPImage.swift */,
+				29F761022CC1365F00BF9DA6 /* Colors.xcassets */,
+				29F761042CC1396F00BF9DA6 /* CPColor.swift */,
+				29F761062CC13AE200BF9DA6 /* CPFont.swift */,
+			);
+			path = DesignSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				290A33632CBE9F3C008D0F3A /* Assets.xcassets in Resources */,
+				29F760FF2CC12A4B00BF9DA6 /* Images.xcassets in Resources */,
 				290A33662CBE9F3C008D0F3A /* Base in Resources */,
+				29F761032CC1365F00BF9DA6 /* Colors.xcassets in Resources */,
 				290A33612CBE9F3B008D0F3A /* Base in Resources */,
 				290A336E2CBEA214008D0F3A /* Splash.storyboard in Resources */,
 			);
@@ -153,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F761052CC1396F00BF9DA6 /* CPColor.swift in Sources */,
 				290A335E2CBE9F3B008D0F3A /* ViewController.swift in Sources */,
 				290A335A2CBE9F3B008D0F3A /* AppDelegate.swift in Sources */,
+				29F761072CC13AE200BF9DA6 /* CPFont.swift in Sources */,
+				29F761012CC12C2700BF9DA6 /* CPImage.swift in Sources */,
 				290A335C2CBE9F3B008D0F3A /* SceneDelegate.swift in Sources */,
 				290A33702CBEA24A008D0F3A /* SplashViewController.swift in Sources */,
 			);
